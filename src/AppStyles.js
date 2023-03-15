@@ -2,7 +2,8 @@ import { useTheme } from "@mui/material";
 const useStyles = () => {
   const theme = useTheme();
   console.log(theme)
-  const classes = {
+  
+  return {
     myButton: {
       borderColor: theme.palette.success.main,
       color: theme.status.ok,
@@ -11,7 +12,6 @@ const useStyles = () => {
       padding: "2rem .5rem",
     },
   };
-  return classes;
 };
 
 export default useStyles;

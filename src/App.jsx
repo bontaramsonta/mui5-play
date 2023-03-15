@@ -1,9 +1,9 @@
 // import reactLogo from "./assets/react.svg";
 import { Button } from "@mui/material";
-import useStyles from "./AppStyles";
+import useAppStyles from "./AppStyles";
 
 function App() {
-  const classes = useStyles();
+  const classes = useAppStyles();
   return (
     <div className="App">
       <Button

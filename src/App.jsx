@@ -32,6 +32,8 @@ function App() {
         about="content"
         style={{
           width: "90vw",
+          minWidth: "800px", // <- causing problems
+          overflowX: "scroll",
           margin: "0 auto",
           //! dbg props
           padding: "0 10px",

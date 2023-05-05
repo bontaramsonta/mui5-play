@@ -1,28 +1,29 @@
-import { blue, lime, red } from "@mui/material/colors";
+import { blue, lime, red } from '@mui/material/colors';
 // import useAppStyles from "./AppStyles";
-import React from "react";
+import React from 'react';
 
 function App() {
   // const classes = useAppStyles();
-  const [noContent] = React.useState(true);
+  const [noContent] = React.useState(false);
   return (
     <div
       style={{
-        minHeight: "100%",
-        display: "grid",
-        gridTemplateRows: "auto 1fr auto",
-        gridTemplateColumns: "100%",
+        height: '100%',
+        display: 'grid',
+        gridTemplateRows: 'auto 1fr auto',
+        gridTemplateColumns: '100%',
+        overflowX: 'auto',
       }}
     >
       <div
         about="navbar"
         style={{
-          width: "100vw",
+          // width: '100vw',
           //! dbg props
-          padding: "10px 0",
           background: lime[100],
-          textAlign: "center",
-          position: "sticky",
+          padding: '10px 0',
+          textAlign: 'center',
+          position: 'sticky',
           top: 0,
         }}
       >
@@ -31,12 +32,10 @@ function App() {
       <div
         about="content"
         style={{
-          width: "90vw",
-          minWidth: "800px", // <- causing problems
-          overflowX: "scroll",
-          margin: "0 auto",
+          width: '90vw',
+          maxWidth: '800px', // <- causing problems
+          margin: '0 auto',
           //! dbg props
-          padding: "0 10px",
           background: red[100],
         }}
       >
@@ -53,7 +52,7 @@ function App() {
               officia non enim aute excepteur enim laboris consequat esse magna
               cillum. Nisi dolor excepteur reprehenderit ut enim est officia
               pariatur mollit ut occaecat amet reprehenderit.
-            </p>{" "}
+            </p>{' '}
             <p>
               Amet enim anim id irure id deserunt anim sint minim nisi aliquip
               irure eiusmod aliqua. Ipsum eu pariatur est excepteur qui
@@ -65,7 +64,7 @@ function App() {
               cupidatat aute occaecat non exercitation cillum occaecat dolore
               labore. Nostrud ipsum consequat id laborum consectetur anim amet
               consectetur eiusmod ea est. Est sunt ipsum in minim cillum.
-            </p>{" "}
+            </p>{' '}
             <p>
               Et nulla laborum irure velit. Dolor in minim esse ea nostrud
               occaecat. Sint cillum eiusmod nulla commodo incididunt. Ex est ad
@@ -76,7 +75,7 @@ function App() {
               nostrud. Cillum officia nisi in ex ad labore veniam. Occaecat
               officia aute cillum non laborum esse veniam ullamco. Dolore eu
               consectetur non consequat excepteur occaecat anim eu.
-            </p>{" "}
+            </p>{' '}
             <p>
               Eiusmod nulla esse laborum excepteur consequat qui ea dolore
               velit. Esse ad proident minim et proident do. Ad ipsum id culpa
@@ -105,9 +104,9 @@ function App() {
       <div
         about="footer"
         style={{
-          width: "100vw",
+          // width: '100vw',
           //! dbg props
-          padding: "0 10px",
+          textAlign: 'center',
           background: blue[100],
         }}
       >

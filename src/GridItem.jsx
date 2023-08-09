@@ -1,7 +1,12 @@
+import Grid from "@mui/material/Unstable_Grid2";
 import React from "react";
 
-function GridItem() {
-  return <div>GridItem</div>;
+function GridItem({ children, ...props }) {
+  return (
+    <Grid item {...props}>
+      {children}
+    </Grid>
+  );
 }
 
 export default GridItem;
